@@ -9,7 +9,7 @@ pipeline {
     stage('Build Image') {
       steps {
         script {
-          dockerImage = docker.build do-test-app
+          dockerImage = docker.build devops-test-app
         }
       }
     }
